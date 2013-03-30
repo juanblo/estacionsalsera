@@ -1,0 +1,5 @@
+# Framework
+Django==1.5
+
+# Libs
+psycopg2==2.4.5
