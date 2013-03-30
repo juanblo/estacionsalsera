@@ -2,5 +2,10 @@
 *.pot
 *.pyc
 
-
+# Local development
 app/local_settings.py
+
+# Static files
+app/static
+app/media/uploads
+
