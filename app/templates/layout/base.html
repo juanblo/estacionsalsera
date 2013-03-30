@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% load staticfiles %}
+{% load staticfiles googletools %}
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -11,6 +11,7 @@
         <meta name="keywords" content="" />
         <meta name="viewport" content="width=device-width">
         <meta name="author" content="Juanblo">
+        {% site_verification_code %}
 
         <meta property="og:locale" content="es_CO">
         <meta property="og:site_name" content="Estación salsera" />
@@ -32,6 +33,7 @@
         <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap/bootstrap.min.css" %}">
         <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap/bootstrap-responsive.min.css" %}">
         <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+        {% analytics_code %}
 
     </head>
 
