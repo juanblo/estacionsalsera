@@ -1,2 +1,102 @@
 {% extends "layout/base.html" %}
 {% load staticfiles %}
+
+{% block content %}
+
+<div id="myCarousel" class="carousel slide">
+    <div class="carousel-inner">
+
+        <div class="item active">
+            <img src="{% static "img/slide_03.png" %}" alt="">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Aquí, es la casa del Sabor !</h1>
+                    <p class="lead">
+                        Desde el tradicional Son, Montuno y la Guajira, pasando
+                        por el punto cubano y de la mano del Guaguancó y el 
+                        Bogaloo, se goza y se baila.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="{% static "img/slide_02.png" %}" alt="">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Siempre presentes con los artistas</h1>
+                    <p class="lead">
+                    </p>
+                    <a class="btn btn-large btn-primary" href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="{% static "img/slide_01.png" %}" alt="">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Cali es Cali, lo demás .....</h1>
+                    <p class="lead">
+                    </p>
+                    <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+
+
+<div class="container marketing">
+
+    <div class="row">
+        <div class="span4">
+            <img class="img-circle" data-src="holder.js/140x140">
+            <h2>Azúcar ! </h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+            <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div>
+
+        <div class="span4">
+            <img class="img-circle" data-src="holder.js/140x140">
+            <h2></h2>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div>
+
+        <div class="span4">
+            <h2>Dime como suena .....</h2>
+            <object width="250" height="250" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="gsPlaylist4387786693" name="gsPlaylist4387786693"><param name="movie" value="http://grooveshark.com/widget.swf" /><param name="wmode" value="window" /><param name="allowScriptAccess" value="always" /><param name="flashvars" value="hostname=grooveshark.com&playlistID=43877866&p=0&bbg=000000&bth=000000&pfg=000000&lfg=000000&bt=FFFFFF&pbg=FFFFFF&pfgh=FFFFFF&si=FFFFFF&lbg=FFFFFF&lfgh=FFFFFF&sb=FFFFFF&bfg=666666&pbgh=666666&lbgh=666666&sbh=666666" /><object type="application/x-shockwave-flash" data="http://grooveshark.com/widget.swf" width="250" height="250"><param name="wmode" value="window" /><param name="allowScriptAccess" value="always" /><param name="flashvars" value="hostname=grooveshark.com&playlistID=43877866&p=0&bbg=000000&bth=000000&pfg=000000&lfg=000000&bt=FFFFFF&pbg=FFFFFF&pfgh=FFFFFF&si=FFFFFF&lbg=FFFFFF&lfgh=FFFFFF&sb=FFFFFF&bfg=666666&pbgh=666666&lbgh=666666&sbh=666666" /><span><a href="http://grooveshark.com/search/playlist?q=Estacion%20salsera%20Juan%20Pablo" title="Estacion salsera by Juan Pablo on Grooveshark">Estacion salsera by Juan Pablo on Grooveshark</a></span></object></object>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="featurette">
+        <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-chrome.png">
+        <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="featurette">
+        <img class="featurette-image pull-left" src="../assets/img/examples/browser-icon-firefox.png">
+        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="featurette">
+        <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-safari.png">
+        <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    </div>
+
+    <hr class="featurette-divider">
+
+{% endblock %}
