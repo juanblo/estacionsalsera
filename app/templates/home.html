@@ -1,6 +1,8 @@
 {% extends "layout/base.html" %}
 {% load staticfiles %}
 
+{% block title %} Inicio {% endblock %}
+
 {% block content %}
 
 <div id="myCarousel" class="carousel slide">
@@ -16,6 +18,7 @@
                         por el punto cubano y de la mano del Guaguancó y el 
                         Bogaloo, se goza y se baila.
                     </p>
+                    <a class="btn btn-large btn-primary" href="#ritmos">Ver más</a>
                 </div>
             </div>
         </div>
@@ -24,10 +27,10 @@
             <img src="{% static "img/slide_02.png" %}" alt="">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Siempre presentes con los artistas</h1>
+                    <h1>Baila y disfruta</h1>
                     <p class="lead">
                     </p>
-                    <a class="btn btn-large btn-primary" href="#">Learn more</a>
+                    <a class="btn btn-large btn-primary" href="#"></a>
                 </div>
             </div>
         </div>
@@ -68,24 +71,26 @@
         </div>
 
         <div class="span4">
-            <h2>Dime como suena .....</h2>
+            <h2>Deleita tus oídos ...</h2>
             <object width="250" height="250" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="gsPlaylist4387786693" name="gsPlaylist4387786693"><param name="movie" value="http://grooveshark.com/widget.swf" /><param name="wmode" value="window" /><param name="allowScriptAccess" value="always" /><param name="flashvars" value="hostname=grooveshark.com&playlistID=43877866&p=0&bbg=000000&bth=000000&pfg=000000&lfg=000000&bt=FFFFFF&pbg=FFFFFF&pfgh=FFFFFF&si=FFFFFF&lbg=FFFFFF&lfgh=FFFFFF&sb=FFFFFF&bfg=666666&pbgh=666666&lbgh=666666&sbh=666666" /><object type="application/x-shockwave-flash" data="http://grooveshark.com/widget.swf" width="250" height="250"><param name="wmode" value="window" /><param name="allowScriptAccess" value="always" /><param name="flashvars" value="hostname=grooveshark.com&playlistID=43877866&p=0&bbg=000000&bth=000000&pfg=000000&lfg=000000&bt=FFFFFF&pbg=FFFFFF&pfgh=FFFFFF&si=FFFFFF&lbg=FFFFFF&lfgh=FFFFFF&sb=FFFFFF&bfg=666666&pbgh=666666&lbgh=666666&sbh=666666" /><span><a href="http://grooveshark.com/search/playlist?q=Estacion%20salsera%20Juan%20Pablo" title="Estacion salsera by Juan Pablo on Grooveshark">Estacion salsera by Juan Pablo on Grooveshark</a></span></object></object>
         </div>
     </div>
 
     <hr class="featurette-divider">
 
-    <div class="featurette">
+    <div class="featurette" id="ritmos">
         <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-chrome.png">
-        <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <h2 class="featurette-heading">Los ritmos caribeños, <span class="muted">nuestra identidad.</span></h2>
+        <p class="lead">
+            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+        </p>
     </div>
 
     <hr class="featurette-divider">
 
     <div class="featurette">
         <img class="featurette-image pull-left" src="../assets/img/examples/browser-icon-firefox.png">
-        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
+        <h2 class="featurette-heading"><span class="muted">See for yourself.</span></h2>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
     </div>
 
